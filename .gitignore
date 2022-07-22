@@ -1,0 +1,3 @@
+*.log
+.vagrant
+install_activegate.sh
