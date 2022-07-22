@@ -1,0 +1,4 @@
+# Copy to .gitconfig
+[user]
+	name = username
+	email = user@email.com

@@ -2,10 +2,11 @@
 yum -y update
 yum install -y epel-release
 yum install -y yum-utils
-yum install -y dnf-plugins-core curl git vim wget
+yum install -y dnf-plugins-core curl git vim wget dos2unix
 yum groupinstall -y "Development Tools"
 yum install -y openssl-devel libffi-devel bzip2-devel
-curl -o /home/vagrant/.vimrc https://raw.githubusercontent.com/BraydenNeale/vimrc/master/.vimrc
+dos2unix .vimrc
+dos2unix .gitconfig
 
 #  Docker
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
